@@ -78,7 +78,7 @@
 
 /* Media Queries*/
 
-@media(min-width: 667px) {
+@media(min-width: $pantalla-chica) {
     .footer {
         section {
             display: flex;
@@ -125,7 +125,7 @@
     }
 }
 
-@media(min-width: 1200px) {
+@media(min-width: $pantalla-grande) {
     .footer {
         .footer__contenido {
             .footer__contenido__ubicacion {
