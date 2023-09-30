@@ -1,0 +1,35 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 3rem;
+}
+
+
+.main p {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.main .main__img img{
+    width: 100%;
+    padding: 5px;
+    gap: 5px;
+}
+/* Media Query img */
+@media( min-width : 667px) {
+    .main .main__img {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .main .main__img img{
+        width: 45%;
+        padding: 5px;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+}
