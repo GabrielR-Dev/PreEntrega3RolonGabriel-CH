@@ -176,17 +176,28 @@ body {
     flex-direction: row;
   }
 }
-.main .main__empleados {
+.main__empleados {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-.main .main__empleados .main__empleados__empleado {
-  position: relative;
+.main__empleados .main__empleados__empleado {
+  width: 70%;
+  padding: 24px;
+  background-color: #fffffe;
 }
-.main .main__empleados .main__empleados__empleado img {
+.main__empleados .main__empleados__empleado p {
+  padding: 2rem;
+}
+.main__empleados .main__empleados__empleado img {
   width: 200px;
   height: 150px;
   border-radius: 20px;
+}
+.main__empleados .main__empleados__empleado .redes-sociales img {
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (min-width: 667px) {
@@ -194,6 +205,10 @@ body {
     width: 400px;
     height: 350px;
     border-radius: 20px;
+  }
+  .main .main__empleados .main__empleados__empleado .redes-sociales img {
+    width: 2rem;
+    height: 2rem;
   }
 }
 @media (min-width: 900px) {

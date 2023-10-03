@@ -1,19 +1,25 @@
-.main {
+
     .main__empleados {
-        display: flex;
+        @include flex-center;
         flex-direction: column;
 
         .main__empleados__empleado {
-            position: relative;
-
+            @include tarjetas;
             img {
                 width: 200px;
                 height: 150px;
                 border-radius: 20px;
             }
+            .redes-sociales{
+
+                img{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
         }
     }
-}
+
 
 
 @media(min-width: $pantalla-chica) {
@@ -24,6 +30,13 @@
                     width: 400px;
                     height: 350px;
                     border-radius: 20px;
+                }
+                .redes-sociales{
+
+                    img{
+                        width: 2rem;
+                        height: 2rem;
+                    }
                 }
             }
         }
