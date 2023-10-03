@@ -1,4 +1,24 @@
 .main {
+
+    .descipcion-vista{
+        @include flex-center;
+        flex-direction: column;
+        
+    }
+
+    .descipcion-sobre-nosotros{
+        @include flex-center;
+        flex-direction: column;
+        .sobre-nosotros-inf{
+            @include tarjetas;
+            transition: 0.5s;
+            &:hover {
+                transform: scale(1.2);
+
+            }
+        }
+    }
+
     .video {
         h3 {
             margin: 20px;

@@ -3,17 +3,49 @@
     box-sizing: border-box;
     padding: 0;
     font-family: 'Bree Serif', serif;
+    
+}
+a{
+    text-decoration: none;
+}
+p,h1,h2,h3,h4{
+    font-family: 'Bree Serif', serif;
+    color: $color-principal-letras-claro;
 }
 
-p {
-    font-family: 'Bree Serif', serif;
-}
 
 hr {
     width: 70%;
     margin: 50px auto!important;
 }
+body{
+    background:$color-secundario;
+}
 
 .header {
     height: 5rem;
 }
+
+.boton-general{
+    margin: 5px;
+    background-color: $backgound-boton-oscuro;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+
+
+    &:hover {
+        background-color: $backgound-boton-claro;
+        transition: .3s;
+    }
+}
+
+.main{
+    @include flex-center;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 3rem;
+}
+
+

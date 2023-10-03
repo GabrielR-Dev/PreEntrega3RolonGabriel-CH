@@ -1,5 +1,6 @@
+
+
 .carousel-inner {
-    margin-top: 5rem;
     position: relative;
 
     .carousel-item {
@@ -14,6 +15,7 @@
 
 /*Media Queries Carousel*/
 @media(min-width: $pantalla-chica) {
+
     .carousel-inner {
         .carousel-item {
             .d-block {
@@ -22,6 +24,8 @@
             }
         }
     }
+    
+
 }
 
 
@@ -68,5 +72,4 @@
             }
         }
     }
-
 }

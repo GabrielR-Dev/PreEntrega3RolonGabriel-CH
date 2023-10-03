@@ -1,10 +1,13 @@
-
 .main {
     .main__clientes {
+        @include flex-center;
+        flex-direction: column;
+
         .main__clientes__cliente {
-            width: 300px;
-            margin: 0 auto;
-            padding: 20px;
+            @include tarjetas;
+            @include flex-center;
+            flex-direction: column;
+            margin: 2rem;
 
             img {
                 border-radius: 40%;
@@ -13,9 +16,17 @@
                 height: 160px;
             }
 
-            p {
-                padding: 5px;
+        }
+    }
+}
+
+@media (min-width: $pantalla-media-chica) {
+    .main {
+        .main__clientes {
+            .main__clientes__cliente {
+                flex-direction: row;
             }
         }
     }
+
 }

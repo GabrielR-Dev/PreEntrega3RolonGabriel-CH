@@ -1,20 +1,26 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    min-height: 50vh;
-    margin-top: 3rem;
-    p {
-        margin: auto;
-        margin-bottom: 2rem;
+
+    .descipcion-vista {
+
+        p {
+            margin: auto;
+            margin-bottom: 2rem;
+        }
     }
-    .main__img {
-        img {
-            width: 100%;
-            padding: 5px;
-            gap: 5px;
+
+    .cards {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10rem;
+
+        .card {
+            @include tarjetas;
+
+            a{
+                @extend .boton-general;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -24,17 +30,24 @@
 /* Media Query img */
 @media(min-width : $pantalla-chica) {
     .main {
-        .main__img {
-            display: flex;
-            justify-content: center;
-            text-align: center;
 
-            img {
-                width: 45%;
-                padding: 5px;
-                gap: 5px;
-                flex-wrap: wrap;
-            }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+
         }
+
     }
+}
+
+@media(min-width : $pantalla-grande) {
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+    }
+
 }

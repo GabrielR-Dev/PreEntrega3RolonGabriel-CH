@@ -1,15 +1,19 @@
 .footer {
+    @include flex-center;
     width: 100%;
-    background-color: rgba(210, 105, 30, 0.8);
+    background-color: $color-principal;
     position: relative;
-    display: flex;
     padding-top: 20px;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+
+
+    * {
+        color: $color-principal-letras-oscuro;
+    }
 
     .footer__title {
         p {
+
             font-size: 20px;
             width: 80%;
             margin: 0 auto;
@@ -32,6 +36,10 @@
             textarea {
                 width: 15rem;
                 resize: none;
+            }
+
+            button {
+                @extend .boton-general;
             }
         }
 
@@ -62,13 +70,15 @@
         }
 
         .footer__redes-sociales {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+            @include iconos-redes;
 
             img {
-                width: 2rem;
-                height: 2rem;
+
+
+                &:hover {
+                    transform: scale(1.2);
+
+                }
             }
 
         }
