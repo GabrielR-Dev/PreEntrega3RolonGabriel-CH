@@ -45,7 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 90%;
+  width: 80%;
   margin-top: 3rem;
 }
 
@@ -56,11 +56,15 @@ body {
 .main .cards {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10rem;
+  gap: 2rem;
+  justify-items: center;
 }
 .main .cards .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
-  padding: 24px;
+  padding: 10px;
   background-color: #fffffe;
 }
 .main .cards .card p {
@@ -71,17 +75,17 @@ body {
 }
 
 /* Media Query img */
-@media (min-width: 667px) {
+@media (min-width: 900px) {
   .main .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem;
   }
 }
 @media (min-width: 1200px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
   }
 }
 .navbar {
@@ -102,6 +106,11 @@ body {
 .navbar .container-fluid .collapse .navbar-nav .nav-item a:hover {
   color: #232946;
   background-color: #ff5500;
+}
+
+.navbar-toggler {
+  background-color: #ff5500;
+  border: 1px;
 }
 
 .carousel-inner {
@@ -152,8 +161,11 @@ body {
   flex-direction: column;
 }
 .main .main__clientes .main__clientes__cliente {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
-  padding: 24px;
+  padding: 10px;
   background-color: #fffffe;
   display: flex;
   justify-content: center;
@@ -183,8 +195,11 @@ body {
   flex-direction: column;
 }
 .main__empleados .main__empleados__empleado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
-  padding: 24px;
+  padding: 10px;
   background-color: #fffffe;
 }
 .main__empleados .main__empleados__empleado p {
@@ -422,9 +437,13 @@ input[type=radio] {
   flex-direction: column;
 }
 .main .descipcion-sobre-nosotros .sobre-nosotros-inf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
-  padding: 24px;
+  padding: 10px;
   background-color: #fffffe;
+  flex-direction: column;
   transition: 0.5s;
 }
 .main .descipcion-sobre-nosotros .sobre-nosotros-inf p {

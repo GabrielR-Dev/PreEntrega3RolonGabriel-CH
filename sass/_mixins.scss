@@ -25,8 +25,9 @@
 }
 
 @mixin tarjetas {
+    @include flex-center;
     width: 70%;
-    padding: 24px;
+    padding: 10px;
     background-color: $color-terciario;
 
     p{

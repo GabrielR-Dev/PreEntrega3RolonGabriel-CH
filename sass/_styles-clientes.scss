@@ -1,7 +1,9 @@
 .main {
+    
+
     .main__clientes {
-        @include flex-center;
-        flex-direction: column;
+            @include flex-center;
+            flex-direction: column;
 
         .main__clientes__cliente {
             @include tarjetas;
